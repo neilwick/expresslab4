@@ -46,7 +46,7 @@ async function blogPage(req, res, next) {
         entries[i] = { start: i, page: i + 1 };
     }
     blogData.entries = entries;
-    //console.log(blogData.entries);
+
     res.render("blog/list",
         {
             title: "Blog",
