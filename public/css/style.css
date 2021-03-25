@@ -15,8 +15,9 @@ white: #FFF
 
 body {
     margin: 0;
-    background-image: url("../img/bg.jpg");
+    background-image: url("../img/bg2.jpg");
     background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .blog .user {
