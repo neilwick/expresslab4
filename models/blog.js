@@ -28,13 +28,15 @@ module.exports = {
         if (row === undefined) {
             row = 0;
         };
+        console.log("r " + row);
         if (perPage === undefined) {
             perPage = 3;
         };
+        console.log("pp " + perPage);
         let startRow = row * perPage;
         const rows = await connection.query("SELECT `blogId`, `title`,username, user.userId, `content`, `dateAdded` FROM `express_spring`.`blog` JOIN `user` ON `user`.userID = blog.userId Order BY `dateAdded` DESC LIMIT ?,?",
             [
-                startRow, startRow + perPage
+                startRow, perPage
             ]);
         const rowCount = await connection.query("SELECT COUNT(blogId) AS rowTotal FROM `blog`");
         // console.log(rowCount[0].rowTotal)

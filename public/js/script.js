@@ -1,6 +1,6 @@
+// Script disabled
 
-
-
+/*
 fetch("../api/add", {
     method: 'POST',
     cache: 'no-cache',
@@ -15,3 +15,4 @@ fetch("../api/add", {
     })
 
 });
+*/
